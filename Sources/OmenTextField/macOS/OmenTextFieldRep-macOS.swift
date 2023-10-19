@@ -18,7 +18,7 @@ import SwiftUI
 
         func makeNSView(context: Context) -> NSTextView {
             let view = CustomNSTextView(rep: self)
-//            view.font = NSFont.preferredFont(forTextStyle: .body)
+            view.font = NSFont.monospacedSystemFont(ofSize: 16, weight: .regular)
             view.backgroundColor = .clear
             view.delegate = context.coordinator
             view.textContainerInset = .zero
